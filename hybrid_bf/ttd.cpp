@@ -130,17 +130,12 @@ int main (int argc, char *argv[])
             q[0][i] = Q[0];
             q[1][i] = Q[1];
             q[2][i] = Q[2];
-<<<<<<< HEAD
         } // end of batch
         batchError = 0.0;
-        //#pragma simd
         for (unsigned l=0; l<batchSize; l++) 
         {
-=======
-        
->>>>>>> origin/master
             batchError += error[l];
-	} // end of batch
+        } // end of batch
     if(batchError/batchSize>1E-8)
     {
         counter++;
