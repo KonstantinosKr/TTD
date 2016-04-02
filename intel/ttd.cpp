@@ -109,9 +109,9 @@ int main (int argc, char *argv[])
     F[1]=f[1][i];
     F[2]=f[2][i];
       
-    //distance[i] = penalty(A, B, C, D, E, F, P, Q);
+    distance[i] = penalty(A, B, C, D, E, F, P, Q);
 
-    distance[i] = bf(A, B, C, D, E, F, P, Q);
+    //distance[i] = bf(A, B, C, D, E, F, P, Q);
 
     p[0][i] = P[0];
     p[1][i] = P[1];
