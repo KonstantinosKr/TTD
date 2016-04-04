@@ -22,8 +22,11 @@
 
 #include <float.h>
 #include "gjk.h"
-#include "alg.h"
+#include "algo.h"
 #include "err.h"
+
+
+double GEOMETRIC_EPSILON = 1E-6;
 
 /* auxiliary point structure used to describe
  * points in the Minkowski difference set (A - B) */
@@ -115,7 +118,7 @@ inline static double* output_point (point *w, int n, double x [4][3], short maxi
     }
   }
 
-  ASSERT_DEBUG (out, "Failed to identify a spare return pointer in maximal_sphere_support_point of gjk");
+  //ASSERT_DEBUG (out, "Failed to identify a spare return pointer in maximal_sphere_support_point of gjk");
 
   return out;
 }
